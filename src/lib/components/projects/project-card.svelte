@@ -9,6 +9,9 @@
 	import AvatarFallback from '../ui/avatar/avatar-fallback.svelte';
 	import AvatarImage from '../ui/avatar/avatar-image.svelte';
 	import Avatar from '../ui/avatar/avatar.svelte';
+	import IllustrationFallback from '../ui/illustration/illustration-fallback.svelte';
+	import IllustrationImage from '../ui/illustration/illustration-image.svelte';
+	import Illustration from '../ui/illustration/illustration.svelte';
 	import Badge from '../ui/badge/badge.svelte';
 	import Button from '../ui/button/button.svelte';
 	import { CardHeader } from '../ui/card';
@@ -39,6 +42,9 @@
 	href={href(`/projects/${project.slug}`)}
 >
 	<CardHeader class="flex w-full flex-col gap-4">
+		<Illustration>
+			<h2>lol was geht</h2>
+		</Illustration>
 		<Avatar>
 			<AvatarFallback>
 				<img src={Assets.Unknown.light} alt={project.name} />
